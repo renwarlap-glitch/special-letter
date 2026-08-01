@@ -24,16 +24,16 @@
             color: #4a4a4a;
         }
 
-        /* کاشگێڕ */
+        /* کاشگێڕ - سەرەوە جێگیرە و ناکەوێتە ژێر نامەکە */
         .timer-container {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             padding: 15px 25px;
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
-            margin-top: 15px;
-            margin-bottom: 120px; /* بەهۆی ئەم دوورییە زۆرەوە نامەکە بە هیچ شێوەیەک ناگات بە کاشگێڕ */
+            margin-top: 10px;
+            margin-bottom: 90px; /* مەودای دروست لەگەڵ زەرفەکە */
             z-index: 100;
             position: relative;
         }
@@ -127,9 +127,9 @@
             text-align: center;
         }
 
-        /* بەرزیی ڕێکخراو لە کاتی بەرزبوونەوەدا */
+        /* کردنەوەی نامەکە - تەنها کەمێک بەرز دەبێتەوە تا نەچێتە سەر کاشگێڕ */
         .envelope.open .letter {
-            transform: translateY(-80px); 
+            transform: translateY(-50px); 
             height: auto;
             min-height: 220px;
             z-index: 4;
