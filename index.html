@@ -24,7 +24,7 @@
             color: #4a4a4a;
         }
 
-        /* کاشگێڕ - سەرەوە جێگیرە و ناکەوێتە ژێر نامەکە */
+        /* کاشگێڕ - لە سەرەوەی لاپەڕەکە */
         .timer-container {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -33,7 +33,7 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
             margin-top: 10px;
-            margin-bottom: 90px; /* مەودای دروست لەگەڵ زەرفەکە */
+            margin-bottom: 70px; /* مەودای بەشی سەرەوە */
             z-index: 100;
             position: relative;
         }
@@ -71,11 +71,12 @@
             color: #888;
         }
 
-        /* زەرفی نامەکە */
+        /* زەرفی نامەکە - هێنراوەتە خوارەوە */
         .envelope-wrapper {
             position: relative;
             cursor: pointer;
             z-index: 10;
+            margin-top: 40px; /* نامەکە کەمێک دێنێتە خوارەوە */
         }
 
         .envelope {
@@ -127,9 +128,9 @@
             text-align: center;
         }
 
-        /* کردنەوەی نامەکە - تەنها کەمێک بەرز دەبێتەوە تا نەچێتە سەر کاشگێڕ */
+        /* بەرزبوونەوەی کەمتر تا نەچێتە سەر کاشگێڕ */
         .envelope.open .letter {
-            transform: translateY(-50px); 
+            transform: translateY(-40px); /* بەرزی بەرزبوونەوەی کەمکراوەتەوە */
             height: auto;
             min-height: 220px;
             z-index: 4;
@@ -144,7 +145,7 @@
         }
 
         .tap-hint {
-            margin-top: 30px;
+            margin-top: 35px;
             font-size: 0.85rem;
             color: #d63384;
             font-weight: bold;
