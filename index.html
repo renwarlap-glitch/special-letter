@@ -24,7 +24,7 @@
             color: #4a4a4a;
         }
 
-        /* کاشگێڕ - لە سەرەوەی لاپەڕەکە */
+        /* کاشگێڕ - لە سەرەوە دەمێنێتەوە */
         .timer-container {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -32,8 +32,7 @@
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
-            margin-top: 10px;
-            margin-bottom: 70px; /* مەودای بەشی سەرەوە */
+            margin-top: 15px;
             z-index: 100;
             position: relative;
         }
@@ -71,12 +70,12 @@
             color: #888;
         }
 
-        /* زەرفی نامەکە - هێنراوەتە خوارەوە */
+        /* زەرفی نامەکە - تەواو هێنراوەتە خوارەوە */
         .envelope-wrapper {
             position: relative;
             cursor: pointer;
             z-index: 10;
-            margin-top: 40px; /* نامەکە کەمێک دێنێتە خوارەوە */
+            margin-top: 140px; /* ئەم دوورییە زۆرە زەرفەکە بە تەواوی دێنێتە خوارەوە */
         }
 
         .envelope {
@@ -128,9 +127,9 @@
             text-align: center;
         }
 
-        /* بەرزبوونەوەی کەمتر تا نەچێتە سەر کاشگێڕ */
+        /* بەرزبوونەوەی ڕێکخراو لە ناو هەوای خوارەوەدا */
         .envelope.open .letter {
-            transform: translateY(-40px); /* بەرزی بەرزبوونەوەی کەمکراوەتەوە */
+            transform: translateY(-40px);
             height: auto;
             min-height: 220px;
             z-index: 4;
@@ -145,7 +144,7 @@
         }
 
         .tap-hint {
-            margin-top: 35px;
+            margin-top: 30px;
             font-size: 0.85rem;
             color: #d63384;
             font-weight: bold;
