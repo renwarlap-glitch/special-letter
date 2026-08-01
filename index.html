@@ -28,44 +28,44 @@
         .timer-container {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(10px);
-            padding: 20px 30px;
+            padding: 15px 25px;
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px; /* دوورییەکی جوان لەگەڵ زەرفەکە */
             z-index: 10;
         }
 
         .timer-title {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #e6005c;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             font-weight: bold;
         }
 
         .timer {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             justify-content: center;
             direction: ltr;
         }
 
         .time-box {
             background: #fff;
-            padding: 10px 15px;
+            padding: 8px 12px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
         .time-box span {
             display: block;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: bold;
             color: #ff4d6d;
         }
 
         .time-box label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: #888;
         }
 
@@ -74,6 +74,7 @@
             position: relative;
             cursor: pointer;
             z-index: 10;
+            margin-top: 10px;
         }
 
         .envelope {
@@ -117,7 +118,7 @@
             height: 160px;
             background: #fff;
             border-radius: 8px;
-            padding: 20px;
+            padding: 15px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             transition: all 0.6s ease;
             z-index: 2;
@@ -126,26 +127,27 @@
         }
 
         .envelope.open .letter {
-            transform: translateY(-130px);
+            transform: translateY(-110px); /* کەمێک هێنراوەتە خوارەوە تا نەچێتە سەر کاشگێڕ */
             height: auto;
-            min-height: 220px;
+            min-height: 200px;
             z-index: 4;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
         .letter p {
-            font-size: 0.95rem;
-            line-height: 1.6;
+            font-size: 0.9rem;
+            line-height: 1.5;
             color: #333;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
         .tap-hint {
-            margin-top: 15px;
-            font-size: 0.9rem;
+            margin-top: 20px;
+            font-size: 0.85rem;
             color: #d63384;
             font-weight: bold;
             animation: pulse 1.5s infinite;
+            z-index: 10;
         }
 
         @keyframes pulse {
@@ -187,10 +189,10 @@
     <div class="envelope-wrapper" onclick="openEnvelope()">
         <div class="envelope" id="env">
             <div class="letter">
-                <h3 style="color: #ff4d6d;">بۆ خۆشەویستەکەم 💖</h3>
+                <h3 style="color: #ff4d6d; font-size: 1rem;">بۆ خۆشەویستەکەم 💖</h3>
                 <p>
-                    ڕۆژی کچە هاوڕێکانت پیرۆز بێت! 🌸<br>
-                    سوپاس بۆ ئەوەی هەمیشە جوانترین بەشی ژیانمی. تۆ تایبەترین دیاری خودایت بۆ من و هەموو ڕۆژێک لەگەڵ تۆ جەژنە! ✨❤️
+                    Happy National Girlfriends Day! 🌸<br>
+                    سوپاس بۆ ئەوەی هەمیشە جوانترین بەشی ژیانمی. تۆ تایبەترین دیاری خودایت بۆ من و بە بوونی تۆ هەموو ڕۆژێک ئاشقتر دەبم! ✨❤️
                 </p>
             </div>
         </div>
@@ -199,9 +201,8 @@
     <div class="tap-hint" id="hint">پەنجە لە زەرفەکە بدە بۆ کردنەوەی نامەکە 💌</div>
 
     <script>
-        // بەرواری دەستپێکی پەیوەندییەکەتان لێرە بنووسە (ساڵ, مانگ-1, ڕۆژ)
-        // تێبینی: مانگەکان لە 0 دەستپێدەکەن (0 واتە کانوونی دووەم/Jan، 7 واتە ئاب/Aug)
-        const startDate = new Date(2024, 0, 1); 
+        // بەرواری ناسین: 29 / 10 / 2025
+        const startDate = new Date(2025, 9, 29); 
 
         function updateTimer() {
             const now = new Date();
